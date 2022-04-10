@@ -1,0 +1,89 @@
+//------------------------------------------------------------------------------
+// Typography
+//------------------------------------------------------------------------------
+
+
+// Import custom font
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+
+// Font placeholder
+%font-base {
+  font-family: 'Inter', sans-serif;
+  line-height: $line-height;
+}
+
+
+// H2
+%h2 {
+  color: $white;
+  font-size: 1.5rem;
+  letter-spacing: -.04em;
+  font-weight: 600;
+}
+
+
+// Body
+%body,
+%body-semi-bold,
+%body-bold {
+  font-size: 1rem;
+  color: $white;
+}
+
+%body {
+  font-weight: 400;
+}
+
+%body-semi-bold {
+  font-weight: 600;
+}
+
+%body-bold {
+  font-weight: 700;
+}
+
+
+// Caption
+.caption,
+.caption-bold {
+  font-size: .75rem;
+  letter-spacing: .02em;
+  color: $white;
+}
+
+.caption {
+  font-weight: 400;
+}
+
+.caption-bold {
+  font-weight: 600;
+}
+
+// info-label
+%info-label {
+  font-size: .875rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: rgba($white, .8);
+}
+
+// action text
+%action-text {
+  font-size: 1.75rem;
+  font-weight: 600;
+  letter-spacing: -.04em;
+  font-feature-settings: 'tnum' on, 'lnum' on;
+  color: $pink;
+}
+
+// Color pink
+.color-pink {
+  color: $pink;
+}
+
+// Color orange
+.color-orange {
+  color: $orange;
+}
+

@@ -1,0 +1,41 @@
+//------------------------------------------------------------------------------
+// Ìcon
+//------------------------------------------------------------------------------
+
+
+//
+// Block
+//
+
+.icon {
+  display: inline-block;
+  flex-shrink: 0;
+
+
+  //
+  // Modifiers
+  //
+
+  &--16 {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  &--24 {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  &--32 {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  &--left {
+    margin-right: .5rem;
+  }
+
+  &--right {
+    margin-left: .5rem;
+  }
+}

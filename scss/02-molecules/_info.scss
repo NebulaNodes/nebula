@@ -1,0 +1,51 @@
+//------------------------------------------------------------------------------
+// Info
+//------------------------------------------------------------------------------
+
+
+//
+// Block
+//
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @include breakpoint($bp-md) {
+    align-items: flex-start;
+  }
+
+
+  //
+  // Element
+  //
+
+  // Label
+  &__label {
+    @extend %info-label;
+    margin: 0;
+  }
+
+  // Value
+  &__value {
+    @extend %action-text;
+    display: flex;
+    align-items: center;
+    margin: .25rem 0 0 0;
+
+    &--sm {
+      font-size: 1rem;
+      letter-spacing: -.02em;
+    }
+
+    .badge {
+      margin-left: .5rem;
+    }
+  }
+
+  .caption {
+    margin: .25rem 0 0 0;
+  }
+}

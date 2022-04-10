@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <style>
+    @keyframes claim-1{0%{fill:#F6F7EB}16%{fill:#e029b0}100%{fill:#e029b0}}
+    @keyframes claim-2{0%{fill:#F6F7EB}33%{fill:#F6F7EB}50%{fill:#e029b0}100%{fill:#e029b0}}
+    @keyframes claim-3{0%{fill:#F6F7EB}50%{fill:#F6F7EB}66%{fill:#e029b0}100%{fill:#e029b0}}
+    @keyframes claim-4{0%{fill:#F6F7EB}66%{fill:#F6F7EB}83%{fill:#e029b0}100%{fill:#e029b0}}
+    @keyframes claim-5{0%{fill:#F6F7EB}83%{fill:#F6F7EB}100%{fill:#e029b0}}
+  </style>
+  <path fill="#F6F7EB" d="M52 62.72H14a.72.72 0 0 1-.72-.72V2a.72.72 0 0 1 .72-.72h38a.72.72 0 0 1 .72.72v60a.72.72 0 0 1-.72.72Zm-37.28-1.44h36.56V2.72H14.72v58.56ZM46 44.72H20v-1.44h26v1.44Z"/>
+  <path fill="#F6F7EB" d="M46 12.72h-4v-1.44h4v1.44Zm-12 0H20v-1.44h14v1.44Z" style="animation:claim-1 1500ms linear infinite"/>
+  <path fill="#F6F7EB" d="M46 20.72h-4v-1.44h4v1.44Zm-12 0H20v-1.44h14v1.44Z" style="animation:claim-2 1500ms linear infinite"/>
+  <path fill="#F6F7EB" d="M46 28.72h-4v-1.44h4v1.44Zm-12 0H20v-1.44h14v1.44Z" style="animation:claim-3 1500ms linear infinite"/>
+  <path fill="#F6F7EB" d="M46 36.72h-4v-1.44h4v1.44Zm-12 0H20v-1.44h14v1.44Z" style="animation:claim-4 1500ms linear infinite"/>
+  <path fill="#F6F7EB" d="M46 52.72h-4v-1.44h4v1.44Z" style="animation:claim-5 1500ms linear infinite"/>
+</svg>

@@ -1,0 +1,167 @@
+//------------------------------------------------------------------------------
+// Form
+//------------------------------------------------------------------------------
+
+
+//
+// Block
+//
+
+.form {
+
+
+  //
+  // Element
+  //
+
+  // Field
+  &__field {
+    + .form__field,
+    + .btn {
+      margin: 1.5rem 0 0;
+    }
+
+    &--danger {
+      .form__label {
+        color: $orange;
+      }
+
+      .form__input {
+        border: 2px solid $orange;
+      }
+
+      .form__help-msg {
+        display: none;
+
+        &--danger {
+          display: flex;
+        }
+      }
+
+    }
+  }
+
+  // Label
+  &__label {
+    @extend %body-semi-bold;
+    margin: 0;
+    transition: all 300ms ease-out;
+
+    + .form__input,
+    + .form__input-field {
+      margin-top: .5rem;
+    }
+
+    // Addon
+    &--addon {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+  }
+
+  // Input & input field commons
+  &__input,
+  &__input-field {
+    @extend %body;
+    outline: 0;
+  }
+
+  // Input
+  &__input {
+    width: 100%;
+    height: 3rem;
+    padding: .5rem 1rem;
+    border: 1px solid rgba($white, .76);
+    border-radius: .5rem;
+    background-color: rgba($white, .16);
+    transition: all 300ms ease-out;
+
+    &:hover,
+    &:focus {
+      border: 2px solid $pink;
+    }
+
+    // Input field
+    &-field {
+      width: 6rem;
+      background: transparent;
+      border: 0;
+    }
+
+    // Addon
+    &--addon {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  // Help message
+  &__help-msg {
+    @extend .caption;
+    display: flex;
+    align-items: flex-end;
+    margin: .5rem 0 0;
+    transition: all 300ms ease-out;
+
+    .icon {
+      fill: $pink;
+      margin: 0 .25rem 0;
+    }
+
+    &--danger {
+      display: none;
+      color: $orange;
+      font-weight: 600;
+
+      .icon {
+        fill: currentColor;
+      }
+    }
+
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+
+
+// Input addon
+.input-addon {
+  display: flex;
+  flex-basis: 50%;
+  align-items: center;
+
+  // Button
+  &__btn {
+    @extend .badge;
+    margin: 0 .75rem 0 0;
+    text-transform: uppercase;
+    transition: all 300ms ease-out;
+
+    &:hover,
+    &:focus {
+      color: $pink;
+    }
+
+    + .input-addon__info {
+      padding: 0 0 0 .75rem;
+      border-left: 1px solid rgba($white, .76);
+    }
+  }
+
+  // Info
+  &__info {
+    @extend %body;
+    display: flex;
+    align-items: center;
+  }
+
+  // Logo
+  &__logo {
+    width: 1rem;
+    height: 1rem;
+    margin: 0 .25rem 0 0;
+  }
+}

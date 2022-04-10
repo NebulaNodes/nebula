@@ -1,0 +1,107 @@
+//------------------------------------------------------------------------------
+// Card
+//------------------------------------------------------------------------------
+
+
+//
+// Block
+//
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 1rem;
+  margin: 2.5rem -1rem 0 -1rem;
+  background: rgba($black, .8);
+  border-top: 1px solid rgba($white, .16);
+  border-bottom: 1px solid rgba($white, .16);
+
+  @include breakpoint($bp-sm) {
+    margin: 2.5rem 0 0 0;
+    border: 1px solid rgba($white, .16);
+    border-radius: 1rem;
+  }
+
+  @include breakpoint($bp-sm) {
+    padding: 1.5rem 2rem;
+  }
+
+  > * + * {
+    margin-top: 1.5rem;
+  }
+
+
+  //
+  // Element
+  //
+
+  // Header
+  &__header {
+    display: flex;
+
+    @include breakpoint($bp-md) {
+      justify-content: space-between;
+    }
+  }
+
+  // Title
+  &__title {
+    @extend %h2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 100%;
+    margin: 0;
+
+    @include breakpoint($bp-md) {
+      justify-content: flex-start;
+      flex-basis: auto;
+    }
+
+    .icon {
+      margin-right: .5rem;
+      opacity: .8;
+    }
+  }
+
+  // Subtitle
+  &__subtitle {
+    @extend %body;
+    margin: .375rem 0 0 .5rem;
+    opacity: .8;
+  }
+
+  // Action
+  &__action {
+
+    &--xs {
+      @include breakpoint($bp-md) {
+        display: none;
+      }
+    }
+
+    &--xl {
+      display: none;
+
+      @include breakpoint($bp-md) {
+        display: flex;
+      }
+    }
+
+    .btn {
+      width: 100%;
+
+      @include breakpoint($bp-md) {
+        width: auto;
+      }
+
+      + .btn {
+        margin: 1.5rem 0 0;
+
+        @include breakpoint($bp-md) {
+          margin: 0 0 0 1.5rem;
+        }
+      }
+    }
+  }
+}

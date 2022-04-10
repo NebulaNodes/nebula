@@ -1,0 +1,48 @@
+//------------------------------------------------------------------------------
+// Grid
+//------------------------------------------------------------------------------
+
+
+// Container
+.container {
+  width: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include breakpoint($bp-sm) {
+    max-width: $mw-xs;
+    padding: 0;
+  }
+
+  @include breakpoint($bp-md) {
+    max-width: $mw-xs;
+  }
+
+  @include breakpoint($bp-lg) {
+    max-width: $mw-xs;
+  }
+
+  @include breakpoint($bp-xl) {
+    max-width: $mw-xs;
+  }
+
+  @include breakpoint($bp-xxl) {
+    max-width: $mw-xxl;
+  }
+}
+
+.row {
+  @include breakpoint($bp-lg) {
+    display: flex;
+    flex: 0 0 100%;
+    justify-content: space-between;
+  }
+}
+
+.col-2 {
+  @include breakpoint($bp-lg) {
+    flex-basis: calc((100% - #{$grid-gap})/2);
+  }
+}

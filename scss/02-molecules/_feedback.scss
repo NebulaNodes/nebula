@@ -1,0 +1,39 @@
+//------------------------------------------------------------------------------
+// Feedback
+//------------------------------------------------------------------------------
+
+
+//
+// Block
+//
+
+.feedback {
+  text-align: center;
+
+  > *:not(:first-child) {
+    margin-top: 1.5rem;
+  }
+
+  //
+  // Element
+  //
+
+  // Animation
+  &__animation {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  // Text
+  &__text {
+    @extend %body-semi-bold;
+    margin: 0;
+  }
+
+  // Subtext
+  &__subtext {
+    display: block;
+    margin: .5rem 0 0;
+    opacity: .8;
+  }
+}

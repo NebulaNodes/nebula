@@ -1,0 +1,15 @@
+//------------------------------------------------------------------------------
+// App
+//------------------------------------------------------------------------------
+
+html {
+  @extend %font-base;
+  background-color: $black;
+  background-image: url('/img/background.svg');
+  background-repeat: no-repeat;
+  background-position: -1476px -941px;
+
+  @include breakpoint($bp-lg) {
+    background-position: calc(50% + 94px) -1264px;
+  }
+}

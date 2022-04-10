@@ -1,0 +1,55 @@
+//------------------------------------------------------------------------------
+// Message
+//------------------------------------------------------------------------------
+
+//
+// Block
+//
+
+.msg {
+  display: inline-flex;
+  align-items: center;
+  padding: .5rem;
+  margin: 2.5rem 0 0;
+  background-color: $white;
+  border-radius: .5rem;
+
+  @include breakpoint($bp-md) {
+    padding: .75rem;
+  }
+
+
+  //
+  // Element
+  //
+
+  // Container
+  &__container {
+    text-align: center;
+  }
+
+  // Content
+  &__content {
+    margin: 0;
+    text-align: left;
+    color: $black;
+
+    @include breakpoint($bp-md) {
+      font-size: 1rem;
+      letter-spacing: -.02em;
+    }
+  }
+
+  .icon {
+    width: 1rem;
+    height: 1rem;
+    margin-right: .5rem;
+    fill: $pink;
+
+    @include breakpoint($bp-md) {
+      width: 1.5rem;
+      height: 1.5rem;
+      margin-right: .75rem;
+    }
+  }
+}

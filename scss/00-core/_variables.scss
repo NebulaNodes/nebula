@@ -1,0 +1,35 @@
+//------------------------------------------------------------------------------
+// Variables
+//------------------------------------------------------------------------------
+
+
+// Breakpoints
+$bp-xs: 320px;
+$bp-sm: 576px;
+$bp-md: 768px;
+$bp-lg: 992px;
+$bp-xl: 1200px;
+$bp-xxl: 1360px;
+
+// Max width
+$mw-xs: calc(100vw - 2rem);
+$mw-xxl: 1280px;
+
+// Grid gap
+$grid-gap: 2.5rem;
+
+// Line height
+$line-height: 1.24;
+
+// Colors
+$pink: #E029B0;
+$purple: #552B8C;
+$blue: #1459A5;
+$white: #F6F7EB;
+$black: #0A1033;
+$orange: #DE5D3A;
+
+// Gradients
+$gradient-linear-blue-pink: linear-gradient(96deg, $blue 0%, $pink 100%);
+
+

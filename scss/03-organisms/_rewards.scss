@@ -1,0 +1,124 @@
+//------------------------------------------------------------------------------
+// Rewards
+//------------------------------------------------------------------------------
+
+
+//
+// Block
+//
+
+.rewards {
+
+  @include breakpoint($bp-sm) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @include breakpoint ($bp-lg) {
+    flex-direction: column;
+  }
+
+  @include breakpoint ($bp-xl) {
+    flex-direction: row;
+  }
+
+  //
+  // Element
+  //
+
+  // Info
+  &__info {
+    .info {
+      @include breakpoint($bp-sm) {
+        align-items: flex-start;
+      }
+    }
+  }
+
+  // Details
+  &__details {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 1.5rem;
+
+    @include breakpoint($bp-sm) {
+      margin-top: 0;
+    }
+
+    @include breakpoint($bp-lg) {
+      margin-top: 1.5rem;
+    }
+
+    @include breakpoint($bp-xl) {
+      margin-top: 0;
+    }
+
+    // Info
+    .info {
+      flex-basis: 33.3%;
+
+      @include breakpoint($bp-sm) {
+        align-items: flex-start;
+        flex-basis: auto;
+
+        &:nth-child(1) {
+          padding-right: 1.5rem;
+        }
+
+        &:nth-child(2) {
+          padding: 0 1.5rem;
+        }
+
+        &:nth-child(3) {
+          padding-left: 1.5rem;
+        }
+      }
+
+      + .info {
+        border-left: 1px solid $blue;
+      }
+    }
+
+    // Value SM
+    .info__value--sm {
+      @include breakpoint($bp-sm) {
+        line-height: calc(1.75rem*1.24);
+      }
+    }
+  }
+
+  // Taxes
+  &__taxes {
+    text-align: center;
+
+    @include breakpoint($bp-sm) {
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .icon {
+      display: none;
+
+      @include breakpoint($bp-sm) {
+        display: inline-flex;
+        fill: $white;
+      }
+    }
+
+    .caption {
+      margin: 0;
+
+      + .caption {
+        margin-top: .5rem;
+
+        @include breakpoint($bp-sm) {
+          padding-left: .5rem;
+          margin: 0 0 0 .5rem;
+          border-left: 1px solid $blue;
+        }
+      }
+    }
+  }
+}
+
+

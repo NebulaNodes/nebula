@@ -1,0 +1,113 @@
+//------------------------------------------------------------------------------
+// Table
+//------------------------------------------------------------------------------
+
+
+//
+// Block
+//
+
+.table {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+
+  //
+  // Element
+  //
+
+  // Row
+  &__row {
+    display: flex;
+    flex-direction: row;
+
+    &--head {
+      border-radius: .5rem .5rem 0 0;
+      background-color: $purple;
+    }
+  }
+
+  // th & td commons
+  &__th,
+  &__td {
+    flex-basis: 100%;
+    padding: .5rem;
+
+    @include breakpoint($bp-md) {
+      padding: 1rem;
+    }
+  }
+
+  // th
+  &__th {
+    @extend %info-label;
+  }
+
+  // td
+  &__td {
+    @extend %body;
+    display: flex;
+    flex-direction: column;
+
+    .caption {
+      margin: .25rem 0 0;
+    }
+
+    @include breakpoint($bp-lg) {
+      flex-direction: row;
+
+      .caption {
+        margin: .2rem 0 0 .25rem;
+      }
+    }
+  }
+
+
+  //
+  // Modifier
+  //
+
+  // Mobile table
+  &--xs {
+    border: 1px solid $purple;
+    border-radius: .5rem;
+
+    @include breakpoint($bp-md) {
+      display: none;
+    }
+
+    .table__row {
+      &:nth-child(odd) {
+        .table__th {
+          background-color: $purple;
+        }
+      }
+
+      &:nth-child(even) {
+        .table__th {
+          background-color: rgba($purple, .76);
+        }
+
+        .table__td {
+          background-color: rgba($purple, .24);
+        }
+      }
+    }
+  }
+
+  // Desktop table
+  &--xl {
+    display: none;
+
+    @include breakpoint($bp-md) {
+      display: flex;
+    }
+
+    .table__row {
+      &:nth-child(2n+3) {
+        background-color: rgba($purple, .24);
+      }
+    }
+  }
+}

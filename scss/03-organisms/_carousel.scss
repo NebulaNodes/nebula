@@ -1,0 +1,127 @@
+//------------------------------------------------------------------------------
+// Carousel
+//------------------------------------------------------------------------------
+
+
+//
+// Block
+//
+
+.carousel {
+
+  //
+  //  Element
+  //
+
+  // Display
+  &__display {
+    display: flex;
+    align-items: center;
+  }
+
+  // Left & right arrows common
+  &__left,
+  &__right {
+    @include breakpoint($bp-md) {
+      display: none;
+    }
+  }
+
+  // Scene
+  &__scene {
+    overflow-x: hidden;
+
+    @include breakpoint($bp-md) {
+      overflow-x: unset;
+    }
+  }
+
+  // Items
+  &__items {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    transition: transform 300ms ease-in-out;
+
+    @include breakpoint($bp-md) {
+      flex-basis: 100%;
+      flex-wrap: wrap;
+    }
+  }
+
+  // Item
+  &__item {
+    display: flex;
+    justify-content: center;
+    flex-basis: 100%;
+    flex-shrink: 0;
+    margin: 0;
+
+    @include breakpoint($bp-md) {
+      justify-content: flex-start;
+      flex-basis: calc(100% / 3);
+
+      + .carousel__item:nth-child(n+4) {
+        margin-top: 1.5rem;
+      }
+    }
+
+    @include breakpoint($bp-lg) {
+      flex-basis: 50%;
+
+      + .carousel__item:nth-child(n+3) {
+        margin-top: 1.5rem;
+      }
+    }
+
+    @include breakpoint($bp-xl) {
+      flex-basis: calc(100% / 3);
+
+      + .carousel__item:nth-child(n+3) {
+        margin-top: 0;
+      }
+
+      + .carousel__item:nth-child(n+4) {
+        margin-top: 1.5rem;
+      }
+    }
+  }
+
+  // Navigation
+  &__navigation {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0 0 0;
+    padding: 0;
+
+    @include breakpoint($bp-md) {
+      display: none;
+    }
+  }
+
+  // Navigation dot
+  &__dot {
+    display: block;
+    width: .5rem;
+    height: .5rem;
+    background-color: rgba($white, .8);
+    border-radius: .25rem;
+    text-indent: -9999px;
+    transition: all 300ms ease-in-out;
+
+    &:hover,
+    &:active {
+      background-image: $gradient-linear-blue-pink;
+    }
+
+    + .carousel__dot {
+      margin-left: 1rem;
+    }
+
+    &--active {
+      width: 1.5rem;
+      background-image: $gradient-linear-blue-pink;
+    }
+  }
+}

@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <title>Nebula Nodes</title>
+  <link rel="preload" href="/img/sprite.svg" as="image" crossorigin>
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body class="container">
+
+  <!-- Header -->
+  <header class="header">
+
+    <!-- Logo + baseline -->
+    <div class="header__brand">
+
+      <!-- Logo -->
+      <img src="/img/logo.png" alt="Nebula Nodes" class="header__logo" />
+
+      <!-- Baseline -->
+      <h1 class="header__baseline">
+        <span class="header__baseline-gradient">Nebula</span> Nodes
+      </h1>
+
+    </div>
+
+    <!-- Icon links -->
+    <div class="icon-links">
+
+      <!-- Discord -->
+      <a class="icon-links__item btn-icon" href="https://discord.gg/m5g3zvTfPs" target="_blank" rel="noopener noreferrer">
+        <svg class="icon icon--32">
+          <use xlink:href="/img/sprite.svg#icon-discord"></use>
+        </svg>
+      </a>
+
+      <!-- Twitter -->
+      <a class="icon-links__item btn-icon" href="https://twitter.com/NebulaNodes" target="_blank" rel="noopener noreferrer">
+        <svg class="icon icon--32">
+          <use xlink:href="/img/sprite.svg#icon-twitter"></use>
+        </svg>
+      </a>
+
+      <!-- Doc -->
+      <a class="icon-links__item btn-icon" href="https://docs.nebulanodes.finance/" target="_blank" rel="noopener noreferrer">
+        <svg class="icon icon--32">
+          <use xlink:href="/img/sprite.svg#icon-doc"></use>
+        </svg>
+      </a>
+
+    </div>
+
+    <!-- Buttons -->
+    <div class="header__buttons">
+
+      <!-- Buy NeBu -->
+      <a class="btn btn--gradient" href="https://traderjoexyz.com/trade?outputCurrency=0x5AA2Ff4Ab706307d8B3D90A462c1ddC055655734#/" target="_blank" rel="noopener noreferrer">
+        <svg class="icon icon--16 icon--left">
+          <use xlink:href="/img/sprite.svg#icon-shopping-cart-plus"></use>
+        </svg>
+        Buy NeBu
+      </a>
+
+      <!-- Metamask -->
+      <button type="button" class="btn btn--gradient">
+        <img class="icon--16 icon--left" src="/img/metamask-logo.svg" alt="Metamask">
+        Disconnect (0x7...dff)
+      </button>
+
+    </div>
+
+    <!-- Menu -->
+    <button type="button" class="btn-icon btn-menu">
+      <svg class="icon icon--32">
+        <use xlink:href="/img/sprite.svg#icon-menu"></use>
+      </svg>
+    </button>
+
+  </header>
+
+  <!-- Message -->
+  <div class="msg__container">
+    <div class="msg">
+      <svg class="icon">
+        <use xlink:href="/img/sprite.svg#icon-info-outline"></use>
+      </svg>
+      <p class="msg__content caption">Some annoucement that can take place here to attract <strong class="color-pink">the attention</strong> on something going on, <a href="#" target="_blank" rel="noopener noreferrer">link here</a></p>
+    </div>
+  </div>
+
+  <!-- Main -->
+  <main class="main">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Card: Daily Nebula Stats -->
+      <article class="card col-2">
+
+        <!-- Card header -->
+        <header class="card__header">
+
+          <!-- Card title -->
+          <h2 class="card__title">
+            <svg class="icon icon--32">
+              <use xlink:href="/img/sprite.svg#icon-monitoring"></use>
+            </svg>
+            Daily Nebula Stats
+          </h2>
+
+          <!-- Card action -->
+          <div class="card__action card__action--xl">
+
+            <!-- Live chart button -->
+            <a class="btn btn--gradient" href="https://dexscreener.com/avalanche/0xd177b5d5c73cb385732b658824f2c6614eb6ed4f" target="_blank" rel="noopener noreferrer">
+              <svg class="icon icon--16 icon--left">
+                <use xlink:href="/img/sprite.svg#icon-chart-candlestick"></use>
+              </svg>
+              Live Chart
+            </a>
+
+          </div>
+
+        </header>
+
+        <!-- Carousel -->
+        <div class="carousel">
+
+          <!-- Carousel display -->
+          <div class="carousel__display">
+
+            <!-- Carousel button left -->
+            <button class="carousel__left btn-icon" type="button" disabled>
+              <svg class="icon icon--32">
+                <use xlink:href="/img/sprite.svg#icon-arrow-left"></use>
+              </svg>
+            </button>
+
+            <div class="carousel__scene">
+
+              <!-- Carousel items -->
+              <ul class="carousel__items">
+
+                <!-- Carousel item -->
+                <li class="carousel__item">
+
+                  <!-- Info -->
+                  <div class="info">
+                    <p class="info__label">Total nodes</p>
+                    <p class="info__value">
+                      19989
+                      <span class="badge">
+                        5%
+                        <svg class="icon">
+                          <use xlink:href="/img/sprite.svg#icon-caret-positive"></use>
+                        </svg>
+                      </span>
+                    </p>
+                  </div>
+
+                </li>
+
+                <!-- Carousel item -->
+                <li class="carousel__item">
+
+                  <!-- Info -->
+                  <div class="info">
+                    <p class="info__label">NeBu price</p>
+                    <p class="info__value">
+                      $3.54
+                      <span class="badge">
+                        4%
+                        <svg class="icon">
+                          <use xlink:href="/img/sprite.svg#icon-caret-negative"></use>
+                        </svg>
+                      </span>
+                    </p>
+                  </div>
+
+                </li>
+
+                <!-- Carousel item -->
+                <li class="carousel__item">
+
+                  <!-- Info -->
+                  <div class="info">
+                    <p class="info__label">Daily ROI</p>
+                    <p class="info__value">2%</p>
+                  </div>
+
+                </li>
+
+                <!-- Carousel item -->
+                <li class="carousel__item">
+
+                  <!-- Info -->
+                  <div class="info">
+                    <p class="info__label">Marketcap</p>
+                    <p class="info__value">
+                      $182k
+                      <span class="badge">
+                        4%
+                        <svg class="icon">
+                          <use xlink:href="/img/sprite.svg#icon-caret-negative"></use>
+                        </svg>
+                      </span>
+                    </p>
+                  </div>
+
+                </li>
+
+                <!-- Carousel item -->
+                <li class="carousel__item">
+
+                  <!-- Info -->
+                  <div class="info">
+                    <p class="info__label">Treasury balance</p>
+                    <p class="info__value">
+                      $502k
+                      <span class="badge">
+                        6%
+                        <svg class="icon">
+                          <use xlink:href="/img/sprite.svg#icon-caret-positive"></use>
+                        </svg>
+                      </span>
+                    </p>
+                  </div>
+
+                </li>
+
+                <!-- Carousel item -->
+                <li class="carousel__item">
+
+                  <!-- Info -->
+                  <div class="info">
+                    <p class="info__label">Treasury gains</p>
+                    <p class="info__value">
+                      $2.6k
+                      <span class="badge">
+                        2%
+                        <svg class="icon">
+                          <use xlink:href="/img/sprite.svg#icon-caret-positive"></use>
+                        </svg>
+                      </span>
+                    </p>
+                  </div>
+
+                </li>
+
+              </ul>
+
+            </div>
+
+            <!-- Carousel button right -->
+            <button class="carousel__right btn-icon" type="button">
+              <svg class="icon icon--32">
+                <use xlink:href="/img/sprite.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
+
+          </div>
+
+          <!-- Carousel navigation -->
+          <ul class="carousel__navigation">
+            <li class="carousel__dot carousel__dot--active">0</li>
+            <li class="carousel__dot">1</li>
+            <li class="carousel__dot">2</li>
+            <li class="carousel__dot">3</li>
+            <li class="carousel__dot">4</li>
+            <li class="carousel__dot">5</li>
+          </ul>
+
+        </div>
+
+        <!-- Card action -->
+        <div class="card__action card__action--xs">
+
+          <!-- Live chart button -->
+          <a class="btn btn--gradient" href="https://dexscreener.com/avalanche/0xd177b5d5c73cb385732b658824f2c6614eb6ed4f" target="_blank" rel="noopener noreferrer">
+            <svg class="icon icon--16 icon--left">
+              <use xlink:href="/img/sprite.svg#icon-chart-candlestick"></use>
+            </svg>
+            Live Chart
+          </a>
+
+        </div>
+
+      </article>
+
+      <!-- Card: Your Rewards -->
+      <article class="card col-2">
+
+        <!-- Card header -->
+        <header class="card__header">
+
+          <!-- Card title -->
+          <h2 class="card__title">
+            <svg class="icon icon--32">
+              <use xlink:href="/img/sprite.svg#icon-piggy-bank"></use>
+            </svg>
+            Your Rewards
+          </h2>
+
+          <!-- Card action -->
+          <div class="card__action card__action--xl">
+
+            <!-- Claim Rewards -->
+            <button class="btn btn--gradient btn-claim-rewards" type="button">
+              <svg class="icon icon--16 icon--left">
+                <use xlink:href="/img/sprite.svg#icon-money"></use>
+              </svg>
+              Claim Rewards
+            </button>
+
+          </div>
+
+        </header>
+
+        <!-- Rewards -->
+        <div class="rewards">
+
+          <!-- Rewards info -->
+          <div class="rewards__info">
+
+            <!-- Info -->
+            <div class="info">
+              <p class="info__label">Total claimable</p>
+              <p class="info__value">$47.58</p>
+              <p class="caption">(21.62 NeBu)</p>
+            </div>
+
+          </div>
+
+          <!-- Rewards details -->
+          <div class="rewards__details">
+
+            <!-- Daily -->
+            <div class="info">
+              <p class="info__label">Daily</p>
+              <p class="info__value info__value--sm">$3.96</p>
+              <p class="caption">(1.8 NeBu)</p>
+            </div>
+
+            <!-- Weekly -->
+            <div class="info">
+              <p class="info__label">Weekly</p>
+              <p class="info__value info__value--sm">$27.72</p>
+              <p class="caption">(12.6 NeBu)</p>
+            </div>
+
+            <!-- Monthly -->
+            <div class="info">
+              <p class="info__label">Monthly</p>
+              <p class="info__value info__value--sm">$47.58</p>
+              <p class="caption">(21.62 NeBu)</p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Rewards taxes -->
+        <div class="rewards__taxes">
+          <svg class="icon icon--16 icon--left">
+            <use xlink:href="/img/sprite.svg#icon-info-outline"></use>
+          </svg>
+          <p class="caption">
+            Claim Tax
+            <span class="color-pink">5%</span>
+          </p>
+          <p class="caption">
+            Sell Tax
+            <span class="color-pink">30% (set 43% slippage)</span>
+          </p>
+        </div>
+
+        <!-- Card action -->
+        <div class="card__action card__action--xs">
+
+          <!-- Claim Rewards -->
+          <button class="btn btn--gradient btn-claim-rewards" type="button">
+            <svg class="icon icon--16 icon--left">
+              <use xlink:href="/img/sprite.svg#icon-money"></use>
+            </svg>
+            Claim Rewards
+          </button>
+
+        </div>
+
+      </article>
+
+    </div>
+
+    <!-- Card: Your Nodes -->
+    <article class="card">
+
+      <!-- Card header -->
+      <header class="card__header">
+
+        <!-- Card title -->
+        <h2 class="card__title">
+          <svg class="icon icon--32">
+            <use xlink:href="/img/sprite.svg#icon-node"></use>
+          </svg>
+          Your Nodes
+          <span class="card__subtitle">
+            <strong class="color-pink">3</strong>/100
+          </span>
+        </h2>
+
+        <!-- Card action -->
+        <div class="card__action card__action--xl">
+
+          <!-- Compound Nodes -->
+          <button class="btn btn--gradient btn-compound-nodes" type="button">
+            <svg class="icon icon--16 icon--left">
+              <use xlink:href="/img/sprite.svg#icon-compound"></use>
+            </svg>
+            Compound Nodes
+          </button>
+
+          <!-- Create Node -->
+          <button class="btn btn--gradient btn-create-node" type="button">
+            <svg class="icon icon--16 icon--left">
+              <use xlink:href="/img/sprite.svg#icon-plus"></use>
+            </svg>
+            Create Node
+          </button>
+
+        </div>
+
+      </header>
+
+      <!-- Card action -->
+      <div class="card__action card__action--xs">
+
+        <!-- Compound Nodes -->
+        <button class="btn btn--gradient btn-compound-nodes" type="button">
+          <svg class="icon icon--16 icon--left">
+            <use xlink:href="/img/sprite.svg#icon-compound"></use>
+          </svg>
+          Compound Nodes
+        </button>
+
+        <!-- Create Node -->
+        <button class="btn btn--gradient btn-create-node" type="button">
+          <svg class="icon icon--16 icon--left">
+            <use xlink:href="/img/sprite.svg#icon-plus"></use>
+          </svg>
+          Create Node
+        </button>
+
+      </div>
+
+      <!-- Mobile table -->
+      <div class="table table--xs">
+        <div class="table__row">
+          <div class="table__th">Name</div>
+          <div class="table__td">First</div>
+        </div>
+        <div class="table__row">
+          <div class="table__th">Size</div>
+          <div class="table__td">
+            <strong class="color-pink">12.76 NeBu</strong>
+          </div>
+        </div>
+        <div class="table__row">
+          <div class="table__th">Last claim</div>
+          <div class="table__td">2 days ago</div>
+        </div>
+        <div class="table__row">
+          <div class="table__th">Claimable rewards</div>
+          <div class="table__td">
+            <strong class="color-pink">$1.80</strong>
+            <span class="caption">(0.5104 NeBu)</span>
+          </div>
+        </div>
+        <div class="table__row">
+          <div class="table__th">Daily rewards</div>
+          <div class="table__td">
+            <strong class="color-pink">$0.90</strong>
+            <span class="caption">(0.2552 NeBu)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile table -->
+      <div class="table table--xs">
+        <div class="table__row">
+          <div class="table__th">Name</div>
+          <div class="table__td">Second</div>
+        </div>
+        <div class="table__row">
+          <div class="table__th">Size</div>
+          <div class="table__td">
+            <strong class="color-pink">12.76 NeBu</strong>
+          </div>
+        </div>
+        <div class="table__row">
+          <div class="table__th">Last claim</div>
+          <div class="table__td">2 days ago</div>
+        </div>
+        <div class="table__row">
+          <div class="table__th">Claimable rewards</div>
+          <div class="table__td">
+            <strong class="color-pink">$1.80</strong>
+            <span class="caption">(0.5104 NeBu)</span>
+          </div>
+        </div>
+        <div class="table__row">
+          <div class="table__th">Daily rewards</div>
+          <div class="table__td">
+            <strong class="color-pink">$0.90</strong>
+            <span class="caption">(0.2552 NeBu)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile table -->
+      <div class="table table--xs">
+        <div class="table__row">
+          <div class="table__th">Name</div>
+          <div class="table__td">Third</div>
+        </div>
+        <div class="table__row">
+          <div class="table__th">Size</div>
+          <div class="table__td">
+            <strong class="color-pink">12.76 NeBu</strong>
+          </div>
+        </div>
+        <div class="table__row">
+          <div class="table__th">Last claim</div>
+          <div class="table__td">2 days ago</div>
+        </div>
+        <div class="table__row">
+          <div class="table__th">Claimable rewards</div>
+          <div class="table__td">
+            <strong class="color-pink">$1.80</strong>
+            <span class="caption">(0.5104 NeBu)</span>
+          </div>
+        </div>
+        <div class="table__row">
+          <div class="table__th">Daily rewards</div>
+          <div class="table__td">
+            <strong class="color-pink">$0.90</strong>
+            <span class="caption">(0.2552 NeBu)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Table XL -->
+      <div class="table table--xl">
+
+        <!-- Table head -->
+        <div class="table__row table__row--head">
+          <div class="table__th">Name</div>
+          <div class="table__th">Size</div>
+          <div class="table__th">Last claim</div>
+          <div class="table__th">Claimable rewards</div>
+          <div class="table__th">Daily rewards</div>
+        </div>
+
+        <!-- Row -->
+        <div class="table__row">
+          <div class="table__td">First</div>
+          <div class="table__td">
+            <strong class="color-pink">12.76 NeBu</strong>
+          </div>
+          <div class="table__td">2 days ago</div>
+          <div class="table__td">
+            <strong class="color-pink">$1.80</strong>
+            <span class="caption">(0.5104 NeBu)</span>
+          </div>
+          <div class="table__td">
+            <strong class="color-pink">$0.90</strong>
+            <span class="caption">(0.2552 NeBu)</span>
+          </div>
+        </div>
+
+        <!-- Row -->
+        <div class="table__row">
+          <div class="table__td">Second</div>
+          <div class="table__td">
+            <strong class="color-pink">12.76 NeBu</strong>
+          </div>
+          <div class="table__td">2 days ago</div>
+          <div class="table__td">
+            <strong class="color-pink">$1.80</strong>
+            <span class="caption">(0.5104 NeBu)</span>
+          </div>
+          <div class="table__td">
+            <strong class="color-pink">$0.90</strong>
+            <span class="caption">(0.2552 NeBu)</span>
+          </div>
+        </div>
+
+        <!-- Row -->
+        <div class="table__row">
+          <div class="table__td">Third</div>
+          <div class="table__td">
+            <strong class="color-pink">12.76 NeBu</strong>
+          </div>
+          <div class="table__td">2 days ago</div>
+          <div class="table__td">
+            <strong class="color-pink">$1.80</strong>
+            <span class="caption">(0.5104 NeBu)</span>
+          </div>
+          <div class="table__td">
+            <strong class="color-pink">$0.90</strong>
+            <span class="caption">(0.2552 NeBu)</span>
+          </div>
+        </div>
+
+      </div>
+
+    </article>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer caption">&copy; 2022 Nebula Nodes</footer>
+
+  <!-- Modals -->
+
+  <!-- Modal: menu -->
+  <div id="modal-mobile-menu" class="modal modal--distributed">
+
+    <!-- Header -->
+    <header class="modal__header">
+
+      <!-- Modal title -->
+      <div class="modal__title">
+
+        <!-- Logo -->
+        <img src="/img/logo.png" alt="Nebula Nodes" class="modal__logo" />
+
+        <!-- Baseline -->
+        <h2 class="modal__baseline modal__baseline--brand">
+          <span class="modal__baseline-gradient">Nebula</span> Nodes
+        </h2>
+
+      </div>
+
+      <!-- Close -->
+      <button type="button" class="btn-icon btn-close">
+        <svg class="icon icon--24">
+          <use xlink:href="/img/sprite.svg#icon-circle-cross"></use>
+        </svg>
+      </button>
+
+    </header>
+
+    <!-- Modal content -->
+    <div class="modal__content">
+
+      <!-- Metamask -->
+      <button type="button" class="btn btn--gradient">
+        <img class="icon--16 icon--left" src="/img/metamask-logo.svg" alt="Metamask">
+        Disconnect (0x7...dff)
+      </button>
+
+      <!-- Buy NeBu -->
+      <a class="btn btn--gradient" href="https://traderjoexyz.com/trade?outputCurrency=0x5AA2Ff4Ab706307d8B3D90A462c1ddC055655734#/" target="_blank" rel="noopener noreferrer">
+        <svg class="icon icon--16 icon--left">
+          <use xlink:href="/img/sprite.svg#icon-shopping-cart-plus"></use>
+        </svg>
+        Buy NeBu
+      </a>
+
+      <!-- Live chart button -->
+      <a class="btn btn--gradient" href="https://dexscreener.com/avalanche/0xd177b5d5c73cb385732b658824f2c6614eb6ed4f" target="_blank" rel="noopener noreferrer">
+        <svg class="icon icon--16 icon--left">
+          <use xlink:href="/img/sprite.svg#icon-chart-candlestick"></use>
+        </svg>
+        Live Chart
+      </a>
+
+      <!-- Create Node -->
+      <button class="btn btn--gradient btn-create-node" type="button">
+        <svg class="icon icon--16 icon--left">
+          <use xlink:href="/img/sprite.svg#icon-plus"></use>
+        </svg>
+        Create Node
+      </button>
+
+      <!-- Claim Rewards -->
+      <button class="btn btn--gradient btn-claim-rewards" type="button">
+        <svg class="icon icon--16 icon--left">
+          <use xlink:href="/img/sprite.svg#icon-money"></use>
+        </svg>
+        Claim Rewards
+      </button>
+
+      <!-- Compound Nodes -->
+      <button class="btn btn--gradient btn-compound-nodes" type="button">
+        <svg class="icon icon--16 icon--left">
+          <use xlink:href="/img/sprite.svg#icon-compound"></use>
+        </svg>
+        Compound Nodes
+      </button>
+
+    </div>
+
+    <!-- Modal footer -->
+    <div class="modal__footer">
+
+      <!-- Icon links -->
+      <div class="icon-links">
+
+        <!-- Discord -->
+        <a class="icon-links__item btn-icon" href="https://discord.gg/m5g3zvTfPs" target="_blank" rel="noopener noreferrer">
+          <svg class="icon icon--32">
+            <use xlink:href="/img/sprite.svg#icon-discord"></use>
+          </svg>
+        </a>
+
+        <!-- Twitter -->
+        <a class="icon-links__item btn-icon" href="https://twitter.com/NebulaNodes" target="_blank" rel="noopener noreferrer">
+          <svg class="icon icon--32">
+            <use xlink:href="/img/sprite.svg#icon-twitter"></use>
+          </svg>
+        </a>
+
+        <!-- Doc -->
+        <a class="icon-links__item btn-icon" href="https://docs.nebulanodes.finance/" target="_blank" rel="noopener noreferrer">
+          <svg class="icon icon--32">
+            <use xlink:href="/img/sprite.svg#icon-doc"></use>
+          </svg>
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Modal: create node -->
+  <div id="modal-create-node" class="modal">
+
+    <!-- Header -->
+    <header class="modal__header">
+
+      <!-- Brand -->
+      <div class="modal__title">
+
+        <!-- Logo -->
+        <svg class="icon modal__logo">
+          <use xlink:href="/img/sprite.svg#icon-node-creation"></use>
+        </svg>
+
+        <!-- Title -->
+        <h2 class="modal__baseline">Node Creation</h2>
+
+      </div>
+
+      <!-- Close -->
+      <button type="button" class="btn-icon btn-close">
+        <svg class="icon icon--24">
+          <use xlink:href="/img/sprite.svg#icon-circle-cross"></use>
+        </svg>
+      </button>
+
+    </header>
+
+    <!-- Modal content -->
+    <div class="modal__content">
+
+      <!-- Form -->
+      <form class="form" action="" method="post">
+
+        <!-- Node name field -->
+        <div class="form__field">
+
+          <!-- Label -->
+          <label class="form__label" for="node-name">Node Name</label>
+
+          <!-- Input -->
+          <input class="form__input" type="text" name="node-name" id="node-name" placeholder="Ex: Helix" />
+
+          <!-- Help message -->
+          <p class="form__help-msg form__help-msg--danger">
+            <svg class="icon icon--16">
+              <use xlink:href="/img/sprite.svg#icon-warning"></use>
+            </svg>
+            You must name your node
+          </p>
+
+        </div>
+
+        <!-- Amount field -->
+        <div class="form__field form">
+
+          <!-- Label -->
+          <label class="form__label form__label--addon" for="token-amount">
+            Token Amount
+            <span class="caption">
+              Balance: <span class="color-pink">14.67 NeBu</span>
+            </span>
+          </label>
+
+          <!-- Input with addon -->
+          <div class="form__input form__input--addon">
+
+            <!-- Input -->
+            <input class="form__input-field" type="number" min="10" name="token-amount" id="token-amount" placeholder="10.0" />
+
+            <!-- Input addon -->
+            <div class="input-addon">
+              <span class="input-addon__btn">Max</span>
+              <span class="input-addon__info">
+                <img class="input-addon__logo" src="/img/logo.png" alt="NeBu" />
+                NeBu
+              </span>
+            </div>
+
+          </div>
+
+          <!-- Help message -->
+          <p class="form__help-msg">
+            <svg class="icon icon--16">
+              <use xlink:href="/img/sprite.svg#icon-info-outline"></use>
+            </svg>
+            Minimal amount required is 10 NeBu
+          </p>
+
+          <p class="form__help-msg form__help-msg--danger">
+            <svg class="icon icon--16">
+              <use xlink:href="/img/sprite.svg#icon-warning"></use>
+            </svg>
+            Available balance is insuficient
+          </p>
+
+        </div>
+
+        <button id="create-node" class="btn btn--gradient" type="button">
+          <svg class="icon icon--16 icon--left">
+            <use xlink:href="/img/sprite.svg#icon-checkmark-outline"></use>
+          </svg>
+          Create Node
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+  <!-- Modal: feedback create node -->
+  <div id="modal-feedback-create-node" class="modal modal--centered">
+
+    <!-- Modal content -->
+    <div class="modal__content">
+
+      <!-- Feedback -->
+      <div class="feedback">
+        <img class="feedback__animation" src="/img/animations/feedback-create-node.svg" alt="creating node">
+        <p class="feedback__text">
+          Establishing contact with <span class="color-pink">Helix</span> in the Nebula
+          <span class="feedback__subtext caption">(creating your node)</span>
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Modal: feedback success -->
+  <div id="modal-feedback-success" class="modal modal--centered">
+
+    <!-- Modal content -->
+    <div class="modal__content">
+
+      <!-- Feedback -->
+      <div class="feedback">
+        <img class="feedback__animation" src="/img/animations/feedback-operation-successful.svg" alt="success">
+        <p class="feedback__text">
+          Operation <span class="color-pink">successful!</span>
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Modal: feedback compounding nodes -->
+  <div id="modal-feedback-compound-nodes" class="modal modal--centered">
+
+    <!-- Modal content -->
+    <div class="modal__content">
+
+      <!-- Feedback -->
+      <div class="feedback">
+        <img class="feedback__animation" src="/img/animations/feedback-compound-nodes.svg" alt="compounding nodes">
+        <p class="feedback__text">
+          Compounding <span class="color-pink">your nodes</span>
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Modal: feedback claiming rewards -->
+  <div id="modal-feedback-claim-rewards" class="modal modal--centered">
+
+    <!-- Modal content -->
+    <div class="modal__content">
+
+      <!-- Feedback -->
+      <div class="feedback">
+        <img class="feedback__animation" src="/img/animations/feedback-claim-rewards.svg" alt="claiming-rewards">
+        <p class="feedback__text">
+          Claiming <span class="color-pink">your rewards!</span>
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Modal: feedback operation aborted -->
+  <div id="modal-feedback-operation-aborted" class="modal modal--centered">
+
+    <!-- Modal content -->
+    <div class="modal__content">
+
+      <!-- Feedback -->
+      <div class="feedback">
+        <img class="feedback__animation" src="/img/animations/feedback-operation-aborted.svg" alt="operation aborted">
+        <p class="feedback__text">
+          Operation <span class="color-orange">aborted!</span>
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="./js/app.js"></script>
+
+</body>
+</html>
